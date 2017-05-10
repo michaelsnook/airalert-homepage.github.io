@@ -1,0 +1,237 @@
+@media(min-width:500px) and (max-width:768px) {
+  .mobile-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+  }
+  main {
+    .first-section {
+      background-size: 200px, 150px;
+    }
+    .second-section {
+      h2 {
+        font-size: 36px;
+      }
+      .clean-air-block {
+        margin: 0 auto 20px;
+        max-width: 300px;
+      }
+      .flex-property {
+        justify-content: center;
+      }
+    }
+    .third-section {
+      background-size: 260px, 260px;
+    }
+    .fourth-section {
+      h4 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+    }
+    .sixth-section {
+      .journey-detail {
+        li {
+          width: 50%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  footer {
+    .row {
+      .col-sm-4 {
+        h4 {
+          margin-bottom: 10px;
+        }
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+    .copyright-row {
+      >div {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media(min-width:320px) and (max-width:499px) {
+  .mobile-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+  }
+  main {
+    section {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .first-section {
+      background-size: 160px, 130px;
+      >div {
+        margin-bottom: 40px;
+      }
+      a.button {
+        margin-top: 35px;
+      }
+      h1 {
+        font-size: 26px;
+        line-height: 35px;
+        margin-top: 0;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+    .second-section {
+      h2 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .clean-air-block {
+        margin: 0 auto 20px;
+        max-width: 250px;
+      }
+    }
+    .third-section {
+      background-size: 200px, 200px;
+      h2 {
+        font-size: 26px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 17px;
+        br {
+          display: none;
+        }
+      }
+    }
+    .fourth-section {
+      h4 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      p {
+        text-align: left;
+      }
+    }
+    .first-section {
+      h3 {
+        font-size: 17px;
+      }
+    }
+    .sixth-section {
+      h2 {
+        font-size: 26px;
+        line-height: 38px;
+      }
+      h3 {
+        font-size: 17px;
+      }
+      .journey-heading {
+        p {
+          font-size: 17px;
+        }
+      }
+      .journey-detail {
+        li {
+          padding: 0;
+          .journey-detail-img{
+            width: 160px;
+            float: left;
+            text-align: center;
+            img {
+              margin: 0;
+            }
+          }
+          .journey {
+            display: table;
+            padding-left: 10px;
+          }
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  footer {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    .powered-by {
+      h4,p {
+        text-align: left;
+      }
+    }
+    .row {
+      .col-sm-4 {
+        h4 {
+          margin-bottom: 10px;
+        }
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+    .copyright-row {
+      >div {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media(min-width:320px) and (max-width:320px) {
+  .first-section {
+    h1 {
+      br {
+        display: none;
+      }
+    }
+  }
+  .sixth-section {
+    .journey-detail {
+       li {
+         .journey-detail-img {
+           width: 100% !important;
+           text-align: left !important;
+         }
+       }
+    }
+  }
+  .third-section {
+    background-size: 170px, 170px !important;
+  }
+  footer {
+    .powered-by {
+      >div {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (orientation:landscape) and (max-width: 768px) {
+  h1, h2 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .first-section {
+    min-height: 510px !important;
+    .down-arrow {
+      display: none;
+    }
+  }
+}

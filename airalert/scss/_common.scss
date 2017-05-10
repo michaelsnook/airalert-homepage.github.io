@@ -1,0 +1,376 @@
+header {
+  position: absolute;
+  top:10px;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  z-index: 1;
+  ul {
+    margin-top: 8px;
+    li {
+      a {
+        color: #bfbfbf;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        border-bottom: 2px solid transparent;
+        margin: 0 10px;
+        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        &:hover {
+          color: #bfbfbf;
+          border-bottom: 2px solid #bfbfbf;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.mobile-menu {
+  position: absolute;
+  z-index: 1111;
+  width: 100%;
+  background-color: #15223d;
+  .navbar-brand {
+    img {
+      width: 100px;
+    }
+  }
+  .navbar-header {
+    button {
+      border: none;
+      span {
+        background-color: #ffffff !important;
+
+      }
+      &:focus, &:hover,&:active {
+        border: none;
+        background-color: transparent !important;
+        span {
+          background-color: #ffffff !important;
+
+        }
+      }
+    }
+  }
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+    ul {
+      li {
+        a {
+          color: #ffffff;
+          padding: 30px 15px;
+          font-size: 25px;
+          &:hover {
+            background-color: #f2f2f2;
+            color: #2e4780;
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggle.collapsed {
+    span {
+      &:first-child{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        top:0;
+      }
+      &:nth-child(2){
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+      }
+      &:last-child {
+        opacity: 1;
+      }
+    }
+  }
+  .navbar-toggle {
+    span {
+      transition: all ease 0.5s;
+      -webkit-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+    }
+    span {
+      &:first-child{
+        transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        -o-transform:rotate(45deg);
+        position: relative;
+        top: 6px;
+      }
+      &:nth-child(2){
+        transform:rotate(-45deg);
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        -o-transform:rotate(-45deg);
+        position: relative;
+      }
+      &:last-child {
+        opacity: 0;
+      }
+    }
+  }
+}
+main {
+  .first-section {
+    position: relative;
+    background-color: #15223d;
+    //background: url(../img/left_mask.png) left bottom no-repeat, url(../img/right_mask.png) right bottom no-repeat;
+    background-image: url(../img/left_mask.png), url(../img/right_mask.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 500px, 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    .down-arrow {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #efefef;
+      margin: 20px 0 15px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+    }
+    a.button {
+      background-color: #d40a23;
+      color: #ffffff;
+      font-size: 14px;
+      margin: 70px auto 0;
+      &:hover {
+        background-color: #b5041a;
+      }
+    }
+  }
+  .second-section {
+    background-color: #e9eff7;
+    padding: 130px 0;
+    text-align: center;
+    h2 {
+      color: #7588b0;
+      font-size: 46px;
+      margin-bottom: 80px;
+      span {
+        background-color: #d40a23;
+        padding: 0 10px;
+        color: #ffffff;
+      }
+    }
+    img {
+      width: 100%;
+    }
+    .clean-air-block {
+      padding-bottom: 30px;
+      background-color: #ffffff;
+      margin: 0 30px;
+    }
+    p {
+      color: #2c354a;
+      font-size: 14px;
+      margin: 30px 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+    }
+    a {
+      background-color: #7588b0;
+      color: #ffffff;
+      margin: 0 auto;
+      &:hover {
+        background-color: #455b8a;
+      }
+    }
+  }
+  .third-section {
+    background-color: #fff;
+    background-image: url(../img/car_polution.png), url(../img/truck_polution.png);
+    background-position: -25px bottom, 105% bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 500px, 500px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    p {
+      font-size: 20px;
+      color: #7488af;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+    }
+    hr {
+      margin: 20px auto;
+    }
+
+    h2 {
+      color: #7488af;
+      font-size: 46px;
+      line-height: 56px;
+      letter-spacing: 2px;
+    }
+  }
+  .fourth-section {
+    padding: 80px 0 135px;
+    h4 {
+      color: #2e4780;
+      margin-bottom: 20px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+    p {
+      font-size: 14px;
+      color: #2e4780;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      padding-right:70px;
+    }
+  }
+  .fifth-section {
+    background-color: #e9eff7;
+    padding: 120px 0;
+    h3 {
+      color: #2e4780;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+    }
+    a {
+      text-align: center;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      border: 2px solid #2e4780;
+      color: #2e4780;
+      &:hover {
+        background-color: #2e4780;
+        color: #ffffff;
+      }
+    }
+  }
+  .sixth-section {
+    background-color: #2e4780;
+    padding: 130px 0;
+    .journey-heading {
+      margin-bottom: 50px;
+      text-align: center;
+      p {
+        margin-bottom: 30px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+      }
+    }
+    .journey-detail {
+      list-style: none;
+      li {
+        width: 20%;
+        float: left;
+        padding: 0 15px;
+      }
+    }
+    h2 {
+      font-size: 46px;
+    }
+    h4 {
+      margin: 30px 0 20px;
+      text-align: left;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+    }
+    h3 {
+      margin-top: 90px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+    }
+    .button {
+      color: #ffffff;
+      margin: 0 auto;
+      display: table;
+      background-color: #d40a23;
+      &:hover {
+        background-color: #b5041a;
+      }
+    }
+    hr {
+      margin: 20px auto;
+    }
+  }
+}
+footer {
+  padding: 70px 0 20px;
+  h4 {
+    color: #213663;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #214798;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+  a {
+    color: #214798;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+  .copyright-row {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    p {
+      color: #9e9e9e;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+    a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+    ul {
+      li {
+        i {
+          color: #7588b0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

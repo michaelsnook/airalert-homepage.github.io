@@ -1,0 +1,776 @@
+/* line 27, ../scss/_setting.scss */
+body {
+  color: #efefef;
+}
+/* line 28, ../scss/_setting.scss */
+body * {
+  padding: 0;
+  margin: 0;
+}
+/* line 33, ../scss/_setting.scss */
+body h1, body h2 {
+  font-size: 46px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 3px;
+}
+/* line 40, ../scss/_setting.scss */
+body h3, body h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+/* line 44, ../scss/_setting.scss */
+body a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+/* line 48, ../scss/_setting.scss */
+body p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+/* line 52, ../scss/_setting.scss */
+body .loading-overlay {
+  background: #15223d;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 11111111;
+  justify-content: center;
+  align-items: center;
+}
+/* line 63, ../scss/_setting.scss */
+body .loading-overlay img {
+  width: 150px;
+}
+/* line 67, ../scss/_setting.scss */
+body .button {
+  display: table;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 14px;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+/* line 79, ../scss/_setting.scss */
+body .button:hover, body .button:focus, body .button:active {
+  text-decoration: none;
+}
+/* line 83, ../scss/_setting.scss */
+body hr {
+  border-color: #d40a23;
+  border-width: 4px;
+  width: 40px;
+  margin: 0 auto;
+}
+/* line 89, ../scss/_setting.scss */
+body .flex-property {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: wrap;
+}
+/* line 93, ../scss/_setting.scss */
+body .flex-property:before, body .flex-property:after {
+  width: 0;
+}
+
+/* line 1, ../scss/_common.scss */
+header {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  z-index: 1;
+}
+/* line 8, ../scss/_common.scss */
+header ul {
+  margin-top: 8px;
+}
+/* line 11, ../scss/_common.scss */
+header ul li a {
+  color: #bfbfbf;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  border-bottom: 2px solid transparent;
+  margin: 0 10px;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+/* line 22, ../scss/_common.scss */
+header ul li a:hover {
+  color: #bfbfbf;
+  border-bottom: 2px solid #bfbfbf;
+  text-decoration: none;
+}
+
+/* line 31, ../scss/_common.scss */
+.mobile-menu {
+  position: absolute;
+  z-index: 1111;
+  width: 100%;
+  background-color: #15223d;
+}
+/* line 37, ../scss/_common.scss */
+.mobile-menu .navbar-brand img {
+  width: 100px;
+}
+/* line 42, ../scss/_common.scss */
+.mobile-menu .navbar-header button {
+  border: none;
+}
+/* line 44, ../scss/_common.scss */
+.mobile-menu .navbar-header button span {
+  background-color: #ffffff !important;
+}
+/* line 48, ../scss/_common.scss */
+.mobile-menu .navbar-header button:focus, .mobile-menu .navbar-header button:hover, .mobile-menu .navbar-header button:active {
+  border: none;
+  background-color: transparent !important;
+}
+/* line 51, ../scss/_common.scss */
+.mobile-menu .navbar-header button:focus span, .mobile-menu .navbar-header button:hover span, .mobile-menu .navbar-header button:active span {
+  background-color: #ffffff !important;
+}
+/* line 58, ../scss/_common.scss */
+.mobile-menu .navbar-collapse {
+  border: none;
+  box-shadow: none;
+}
+/* line 63, ../scss/_common.scss */
+.mobile-menu .navbar-collapse ul li a {
+  color: #ffffff;
+  padding: 30px 15px;
+  font-size: 25px;
+}
+/* line 67, ../scss/_common.scss */
+.mobile-menu .navbar-collapse ul li a:hover {
+  background-color: #f2f2f2;
+  color: #2e4780;
+}
+/* line 77, ../scss/_common.scss */
+.mobile-menu .navbar-toggle.collapsed span:first-child {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  top: 0;
+}
+/* line 84, ../scss/_common.scss */
+.mobile-menu .navbar-toggle.collapsed span:nth-child(2) {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+/* line 90, ../scss/_common.scss */
+.mobile-menu .navbar-toggle.collapsed span:last-child {
+  opacity: 1;
+}
+/* line 96, ../scss/_common.scss */
+.mobile-menu .navbar-toggle span {
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+}
+/* line 104, ../scss/_common.scss */
+.mobile-menu .navbar-toggle span:first-child {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+  top: 6px;
+}
+/* line 112, ../scss/_common.scss */
+.mobile-menu .navbar-toggle span:nth-child(2) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  position: relative;
+}
+/* line 119, ../scss/_common.scss */
+.mobile-menu .navbar-toggle span:last-child {
+  opacity: 0;
+}
+
+/* line 126, ../scss/_common.scss */
+main .first-section {
+  position: relative;
+  background-color: #15223d;
+  background-image: url(../img/left_mask.png), url(../img/right_mask.png);
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 500px, 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* line 137, ../scss/_common.scss */
+main .first-section h1 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+/* line 141, ../scss/_common.scss */
+main .first-section .down-arrow {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* line 148, ../scss/_common.scss */
+main .first-section p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #efefef;
+  margin: 20px 0 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+/* line 156, ../scss/_common.scss */
+main .first-section a.button {
+  background-color: #d40a23;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 70px auto 0;
+}
+/* line 161, ../scss/_common.scss */
+main .first-section a.button:hover {
+  background-color: #b5041a;
+}
+/* line 166, ../scss/_common.scss */
+main .second-section {
+  background-color: #e9eff7;
+  padding: 130px 0;
+  text-align: center;
+}
+/* line 170, ../scss/_common.scss */
+main .second-section h2 {
+  color: #7588b0;
+  font-size: 46px;
+  margin-bottom: 80px;
+}
+/* line 174, ../scss/_common.scss */
+main .second-section h2 span {
+  background-color: #d40a23;
+  padding: 0 10px;
+  color: #ffffff;
+}
+/* line 180, ../scss/_common.scss */
+main .second-section img {
+  width: 100%;
+}
+/* line 183, ../scss/_common.scss */
+main .second-section .clean-air-block {
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  margin: 0 30px;
+}
+/* line 188, ../scss/_common.scss */
+main .second-section p {
+  color: #2c354a;
+  font-size: 14px;
+  margin: 30px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+/* line 195, ../scss/_common.scss */
+main .second-section a {
+  background-color: #7588b0;
+  color: #ffffff;
+  margin: 0 auto;
+}
+/* line 199, ../scss/_common.scss */
+main .second-section a:hover {
+  background-color: #455b8a;
+}
+/* line 204, ../scss/_common.scss */
+main .third-section {
+  background-color: #fff;
+  background-image: url(../img/car_polution.png), url(../img/truck_polution.png);
+  background-position: -25px bottom, 105% bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 500px, 500px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 500px;
+}
+/* line 214, ../scss/_common.scss */
+main .third-section p {
+  font-size: 20px;
+  color: #7488af;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+/* line 222, ../scss/_common.scss */
+main .third-section hr {
+  margin: 20px auto;
+}
+/* line 226, ../scss/_common.scss */
+main .third-section h2 {
+  color: #7488af;
+  font-size: 46px;
+  line-height: 56px;
+  letter-spacing: 2px;
+}
+/* line 233, ../scss/_common.scss */
+main .fourth-section {
+  padding: 80px 0 135px;
+}
+/* line 235, ../scss/_common.scss */
+main .fourth-section h4 {
+  color: #2e4780;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+/* line 243, ../scss/_common.scss */
+main .fourth-section p {
+  font-size: 14px;
+  color: #2e4780;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  padding-right: 70px;
+}
+/* line 251, ../scss/_common.scss */
+main .fifth-section {
+  background-color: #e9eff7;
+  padding: 120px 0;
+}
+/* line 254, ../scss/_common.scss */
+main .fifth-section h3 {
+  color: #2e4780;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+/* line 263, ../scss/_common.scss */
+main .fifth-section a {
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  border: 2px solid #2e4780;
+  color: #2e4780;
+}
+/* line 269, ../scss/_common.scss */
+main .fifth-section a:hover {
+  background-color: #2e4780;
+  color: #ffffff;
+}
+/* line 275, ../scss/_common.scss */
+main .sixth-section {
+  background-color: #2e4780;
+  padding: 130px 0;
+}
+/* line 278, ../scss/_common.scss */
+main .sixth-section .journey-heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+/* line 281, ../scss/_common.scss */
+main .sixth-section .journey-heading p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+/* line 289, ../scss/_common.scss */
+main .sixth-section .journey-detail {
+  list-style: none;
+}
+/* line 291, ../scss/_common.scss */
+main .sixth-section .journey-detail li {
+  width: 20%;
+  float: left;
+  padding: 0 15px;
+}
+/* line 297, ../scss/_common.scss */
+main .sixth-section h2 {
+  font-size: 46px;
+}
+/* line 300, ../scss/_common.scss */
+main .sixth-section h4 {
+  margin: 30px 0 20px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+/* line 306, ../scss/_common.scss */
+main .sixth-section p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+/* line 312, ../scss/_common.scss */
+main .sixth-section h3 {
+  margin-top: 90px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+/* line 320, ../scss/_common.scss */
+main .sixth-section .button {
+  color: #ffffff;
+  margin: 0 auto;
+  display: table;
+  background-color: #d40a23;
+}
+/* line 325, ../scss/_common.scss */
+main .sixth-section .button:hover {
+  background-color: #b5041a;
+}
+/* line 329, ../scss/_common.scss */
+main .sixth-section hr {
+  margin: 20px auto;
+}
+
+/* line 334, ../scss/_common.scss */
+footer {
+  padding: 70px 0 20px;
+}
+/* line 336, ../scss/_common.scss */
+footer h4 {
+  color: #213663;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+/* line 341, ../scss/_common.scss */
+footer p {
+  color: #214798;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+/* line 347, ../scss/_common.scss */
+footer a {
+  color: #214798;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+/* line 353, ../scss/_common.scss */
+footer .copyright-row {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+/* line 357, ../scss/_common.scss */
+footer .copyright-row p {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+/* line 363, ../scss/_common.scss */
+footer .copyright-row a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+/* line 369, ../scss/_common.scss */
+footer .copyright-row ul li i {
+  color: #7588b0;
+  font-size: 20px;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* line 3, ../scss/_large.scss */
+  main .first-section {
+    background-size: 400px, 300px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  /* line 3, ../scss/_medium.scss */
+  main .first-section {
+    background-size: 300px, 200px;
+  }
+  /* line 7, ../scss/_medium.scss */
+  main .second-section h2 {
+    font-size: 40px;
+  }
+  /* line 10, ../scss/_medium.scss */
+  main .second-section .clean-air-block {
+    margin-bottom: 20px;
+  }
+  /* line 14, ../scss/_medium.scss */
+  main .third-section {
+    background-size: 350px, 350px;
+  }
+  /* line 18, ../scss/_medium.scss */
+  main .fourth-section h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  /* line 25, ../scss/_medium.scss */
+  main .sixth-section .journey-detail li {
+    width: 33.3%;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  /* line 2, ../scss/_small.scss */
+  .mobile-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+  }
+
+  /* line 14, ../scss/_small.scss */
+  main .first-section {
+    background-size: 200px, 150px;
+  }
+  /* line 18, ../scss/_small.scss */
+  main .second-section h2 {
+    font-size: 36px;
+  }
+  /* line 21, ../scss/_small.scss */
+  main .second-section .clean-air-block {
+    margin: 0 auto 20px;
+    max-width: 300px;
+  }
+  /* line 25, ../scss/_small.scss */
+  main .second-section .flex-property {
+    justify-content: center;
+  }
+  /* line 29, ../scss/_small.scss */
+  main .third-section {
+    background-size: 260px, 260px;
+  }
+  /* line 33, ../scss/_small.scss */
+  main .fourth-section h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  /* line 40, ../scss/_small.scss */
+  main .sixth-section .journey-detail li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  /* line 49, ../scss/_small.scss */
+  footer .row .col-sm-4 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* line 50, ../scss/_small.scss */
+  footer .row .col-sm-4 h4 {
+    margin-bottom: 10px;
+  }
+  /* line 58, ../scss/_small.scss */
+  footer .copyright-row > div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  /* line 67, ../scss/_small.scss */
+  .mobile-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+  }
+
+  /* line 79, ../scss/_small.scss */
+  main section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  /* line 83, ../scss/_small.scss */
+  main .first-section {
+    background-size: 160px, 130px;
+  }
+  /* line 85, ../scss/_small.scss */
+  main .first-section > div {
+    margin-bottom: 40px;
+  }
+  /* line 88, ../scss/_small.scss */
+  main .first-section a.button {
+    margin-top: 35px;
+  }
+  /* line 91, ../scss/_small.scss */
+  main .first-section h1 {
+    font-size: 26px;
+    line-height: 35px;
+    margin-top: 0;
+  }
+  /* line 96, ../scss/_small.scss */
+  main .first-section p {
+    font-size: 17px;
+  }
+  /* line 101, ../scss/_small.scss */
+  main .second-section h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  /* line 105, ../scss/_small.scss */
+  main .second-section .clean-air-block {
+    margin: 0 auto 20px;
+    max-width: 250px;
+  }
+  /* line 110, ../scss/_small.scss */
+  main .third-section {
+    background-size: 200px, 200px;
+  }
+  /* line 112, ../scss/_small.scss */
+  main .third-section h2 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  /* line 116, ../scss/_small.scss */
+  main .third-section p {
+    font-size: 17px;
+  }
+  /* line 118, ../scss/_small.scss */
+  main .third-section p br {
+    display: none;
+  }
+  /* line 124, ../scss/_small.scss */
+  main .fourth-section h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  /* line 129, ../scss/_small.scss */
+  main .fourth-section p {
+    text-align: left;
+  }
+  /* line 134, ../scss/_small.scss */
+  main .first-section h3 {
+    font-size: 17px;
+  }
+  /* line 139, ../scss/_small.scss */
+  main .sixth-section h2 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  /* line 143, ../scss/_small.scss */
+  main .sixth-section h3 {
+    font-size: 17px;
+  }
+  /* line 147, ../scss/_small.scss */
+  main .sixth-section .journey-heading p {
+    font-size: 17px;
+  }
+  /* line 152, ../scss/_small.scss */
+  main .sixth-section .journey-detail li {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* line 154, ../scss/_small.scss */
+  main .sixth-section .journey-detail li .journey-detail-img {
+    width: 160px;
+    float: left;
+    text-align: center;
+  }
+  /* line 158, ../scss/_small.scss */
+  main .sixth-section .journey-detail li .journey-detail-img img {
+    margin: 0;
+  }
+  /* line 162, ../scss/_small.scss */
+  main .sixth-section .journey-detail li .journey {
+    display: table;
+    padding-left: 10px;
+  }
+
+  /* line 172, ../scss/_small.scss */
+  footer {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  /* line 176, ../scss/_small.scss */
+  footer .powered-by h4, footer .powered-by p {
+    text-align: left;
+  }
+  /* line 181, ../scss/_small.scss */
+  footer .row .col-sm-4 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* line 182, ../scss/_small.scss */
+  footer .row .col-sm-4 h4 {
+    margin-bottom: 10px;
+  }
+  /* line 190, ../scss/_small.scss */
+  footer .copyright-row > div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 320px) {
+  /* line 200, ../scss/_small.scss */
+  .first-section h1 br {
+    display: none;
+  }
+
+  /* line 208, ../scss/_small.scss */
+  .sixth-section .journey-detail li .journey-detail-img {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  /* line 215, ../scss/_small.scss */
+  .third-section {
+    background-size: 170px, 170px !important;
+  }
+
+  /* line 220, ../scss/_small.scss */
+  footer .powered-by > div {
+    width: 100%;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  /* line 227, ../scss/_small.scss */
+  h1, h2 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+
+  /* line 231, ../scss/_small.scss */
+  .first-section {
+    min-height: 510px !important;
+  }
+  /* line 233, ../scss/_small.scss */
+  .first-section .down-arrow {
+    display: none;
+  }
+}

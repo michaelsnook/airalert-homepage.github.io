@@ -1,0 +1,97 @@
+//@font-face {
+//  font-family: 'montserratlight';
+//  src: url('../fonts/Montserrat-Light/montserrat-light-webfont.woff2') format('woff2'),
+//  url('../fonts/Montserrat-Light/montserrat-light-webfont.woff') format('woff');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'montserratregular';
+//  src: url('../fonts/Montserat-Regular/montserrat-regular-webfont.woff2') format('woff2'),
+//  url('../fonts/Montserat-Regular/montserrat-regular-webfont.woff') format('woff');
+//  font-weight: normal;
+//  font-style: normal;
+//
+//}
+//
+//@font-face {
+//  font-family: 'montserratbold';
+//  src: url('../fonts/Montserrat-Bold/montserrat-bold-webfont.woff2') format('woff2'),
+//  url('../fonts/Montserrat-Bold/montserrat-bold-webfont.woff') format('woff');
+//  font-weight: normal;
+//  font-style: normal;
+//
+//}
+
+body{
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  color: #efefef;
+  h1, h2 {
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 3px;
+  }
+  h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+  a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+  }
+  .loading-overlay {
+    background: rgb(21,34,61);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 11111111;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 150px;
+    }
+  }
+  .button {
+    display: table;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+    }
+  }
+  hr {
+    border-color: #d40a23;
+    border-width: 4px;
+    width: 40px;
+    margin: 0 auto;
+  }
+  .flex-property{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: wrap;
+    &:before,&:after{
+      width: 0;
+    }
+  }
+}
